@@ -1,0 +1,82 @@
+:root {
+  --main-width: 55vw;
+  --font-stack: "Anonymous Pro", "Red Hat Mono", "Inconsolata", "Lekton",
+    "DejaVu Sans Mono", "Menlo", "Monaco", "Lucida Console", "Liberation Mono",
+    "Bitstream Vera Sans Mono", "Courier New", sans-serif;
+  --blue-1: #eff4f9;
+  --blue-2: #d7dff1;
+  --blue-3: #99a7c5;
+  --blue-4: #798eb0;
+  --blue-5: #4e6592;
+  --blue-6: #303855;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-stack);
+  background-color: var(--blue-1);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: var(--main-width);
+  margin-top: 2vh;
+}
+
+nav a {
+  color: var(--blue-4);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: var(--main-width);
+}
+
+.nav_left {
+  display: flex;
+}
+
+.nav_right {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_right a {
+  margin-left: 1vw;
+}
+
+.hero-headline {
+  display: flex;
+  height: 20vh;
+  justify-content: flex-end;
+  margin-bottom: 5vh;
+  font-size: 1.9rem;
+}
+
+.hero-headline_title {
+  color: var(--blue-5);
+  font-weight: 600;
+}
+
+@keyframes caret {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.1%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero-headline_cursor {
+  background-color: var(--blue-5);
+  animation: caret 1s steps(1) 2;
+}

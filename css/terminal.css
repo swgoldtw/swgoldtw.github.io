@@ -1,0 +1,97 @@
+:root {
+  --screen-corner-radius: 0.5vw;
+}
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.terminal-buttons {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 0.5vw;
+  background-color: #bbb;
+  border-top-right-radius: var(--screen-corner-radius);
+  border-top-left-radius: var(--screen-corner-radius);
+}
+
+.terminal-buttons div {
+  display: flex;
+  height: 1vw;
+  width: 1vw;
+  border-radius: 50%;
+  margin-right: 0.3vw; /* Space between buttons */
+  border: 0.05vw solid transparent;
+}
+
+.close-button {
+  background-color: #ff3b47;
+  border-color: #9d252b;
+}
+
+.min-button {
+  background-color: #ffc100;
+  border-color: #9d802c;
+}
+
+.full-button {
+  background-color: #00d742;
+  border-color: #049931;
+}
+
+.terminal-screen {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue-6);
+  border-bottom-left-radius: var(--screen-corner-radius);
+  border-bottom-right-radius: var(--screen-corner-radius);
+}
+
+.terminal-screen p {
+  display: flex;
+  margin: 1vw 2vw 0.1vw;
+  white-space: normal;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.terminal-screen_emoji {
+  display: flex;
+  margin-right: 0.5vw;
+  font-size: 1.8rem;
+  height: auto;
+}
+
+.terminal-screen_image {
+  display: flex;
+  width: calc(var(--main-width) / 12);
+  height: auto;
+  object-fit: contain;
+  margin-left: 0vw;
+  margin-right: 1vw;
+}
+
+.terminal-screen_image[srcset*="trend-micro-logo"] {
+  padding-left: calc(var(--main-width) / 100);
+  padding-right: calc(var(--main-width) / 100);
+  background-color: #fff;
+}
+
+.line1 {
+  color: var(--blue-2);
+}
+
+.line2 {
+  color: var(--blue-4);
+}
+
+.line3 {
+  color: #e09690;
+}
+
+.line4 {
+  color: #9cd9f0;
+}
