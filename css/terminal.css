@@ -1,7 +1,3 @@
-:root {
-  --screen-corner-radius: 0.5vw;
-}
-
 .terminal {
   display: flex;
   flex-direction: column;
@@ -86,12 +82,4 @@
 
 .line2 {
   color: var(--blue-4);
-}
-
-.line3 {
-  color: #e09690;
-}
-
-.line4 {
-  color: #9cd9f0;
 }
