@@ -23,6 +23,7 @@ html {
   align-items: center;
   font-family: var(--font-stack);
   background-color: var(--blue-1);
+  text-align: justify;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -77,7 +78,7 @@ section {
 .section-header {
   margin: 7rem 0;
   color: var(--blue-5);
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 600;
 }
 
@@ -98,26 +99,47 @@ section {
 .project-image {
   height: 100%;
   width: 40%;
-  object-fit: scale-down;
+  object-fit: fill;
 }
 
 .project-content {
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  justify-content: space-between;
+  row-gap: 2rem;
   padding: 2rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue-5);
+}
+
+.project-detail {
+  justify-content: start;
+  line-height: 1.5rem;
+}
+
+.project-skills span {
+  color: var(--blue-4);
+  padding: 0.5rem; /* span size */
+  border: solid;
+  border-color: var(--blue-5);
+  border-radius: 0.5rem;
 }
 
 .project-links {
   display: flex;
   text-wrap: nowrap;
-  column-gap: 1vw;
+  column-gap: 1rem;
 }
 
 .project-links a {
   display: flex;
   align-items: center;
-  height: 5vh;
+  width: 25%;
+  height: 50%;
   padding: 1vh 1vw;
   column-gap: 1rem;
   border-radius: 0.5rem;
