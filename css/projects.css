@@ -10,7 +10,6 @@
   min-height: 50vh;
   box-shadow: 0 50px 100px rgba(121, 142, 176, 0.05),
     0 15px 35px rgba(121, 142, 176, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
-  overflow: auto;
 }
 
 #projects-section .project-image {
@@ -30,6 +29,7 @@
   width: 50%;
   padding: 2rem;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
 #projects-section .project-title {
@@ -52,6 +52,9 @@
 }
 
 #projects-section .project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 2rem;
   font-size: 1rem;
 }
