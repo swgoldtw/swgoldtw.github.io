@@ -24,7 +24,7 @@
   align-items: center;
   font-family: var(--font-stack);
   background-color: var(--blue-1);
-  text-align: justify;
+  /* text-align: justify; */
 
   margin: 0;
   height: 100%;
@@ -64,7 +64,7 @@
 }
 
 .nav_right a {
-  margin-left: 1vw;
+  margin-left: 2rem;
 }
 
 #hero-headline {
