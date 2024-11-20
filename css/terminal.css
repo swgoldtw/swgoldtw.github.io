@@ -85,3 +85,9 @@
 #terminal .line2 {
   color: var(--blue-4);
 }
+
+#terminal .leading-space {
+  display: inline-flex;
+  text-indent: -1rem;
+  padding-left: 2.1rem;
+}
