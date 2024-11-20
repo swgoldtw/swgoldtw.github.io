@@ -17,6 +17,12 @@
   --screen-corner-radius: 0.5vw;
 }
 
+@media only screen and (max-width: 1000px) {
+  :root {
+    --main-width: 90vw;
+  }
+}
+
 #my-body,
 #my-html {
   display: flex;
@@ -24,11 +30,17 @@
   align-items: center;
   font-family: var(--font-stack);
   background-color: var(--blue-1);
-  /* text-align: justify; */
 
   margin: 0;
   height: 100%;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #my-body,
+  #my-html {
+    font-size: 12px;
+  }
 }
 
 #my-body *,
