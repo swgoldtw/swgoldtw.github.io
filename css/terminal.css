@@ -65,17 +65,29 @@
 
 #terminal .terminal-screen_image {
   display: flex;
-  width: calc(var(--main-width) / 12);
-  height: auto;
-  object-fit: contain;
-  margin-left: 0vw;
-  margin-right: 1vw;
+  margin-left: 0;
+  margin-right: 1rem;
+  min-height: 15px;
+  max-height: 40px;
+  max-width: 120px;
+  object-fit: cover;
 }
 
-#terminal .terminal-screen_image[srcset*="trend-micro-logo"] {
-  padding-left: calc(var(--main-width) / 100);
-  padding-right: calc(var(--main-width) / 100);
+#terminal .terminal-screen_image[srcset*="trend-micro-"] {
+  padding: 3px 6px;
   background-color: #fff;
+}
+
+#terminal .terminal-screen_image[srcset*="zyxel-"] {
+  padding: 3px 6px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) and (max-height: 900px) {
+  #terminal .terminal-screen_image {
+    max-height: 15px;
+    max-width: 45px;
+  }
 }
 
 #terminal .line1 {
