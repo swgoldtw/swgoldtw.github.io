@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row;
   height: 100%;
-  padding: 0.5vw;
+  padding: 0.5rem;
   background-color: #bbb;
   border-top-right-radius: var(--screen-corner-radius);
   border-top-left-radius: var(--screen-corner-radius);
@@ -17,10 +17,12 @@
 #terminal .terminal-buttons div {
   display: flex;
   height: 1vw;
+  min-height: 7px;
   width: 1vw;
+  min-width: 7px;
   border-radius: 50%;
-  margin-right: 0.3vw; /* Space between buttons */
-  border: 0.05vw solid transparent;
+  margin-right: 0.5rem; /* Space between buttons */
+  border: 0.01rem solid transparent;
 }
 
 #terminal .close-button {
@@ -41,6 +43,7 @@
 #terminal .terminal-screen {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
   background-color: var(--blue-6);
   border-bottom-left-radius: var(--screen-corner-radius);
   border-bottom-right-radius: var(--screen-corner-radius);
@@ -48,16 +51,14 @@
 
 #terminal .terminal-screen p {
   display: flex;
-  margin: 1vw 2vw 0.1vw;
   white-space: normal;
-  overflow: hidden;
   font-size: 1rem;
   align-items: center;
 }
 
 .terminal-screen_emoji {
   display: flex;
-  margin-right: 0.5vw;
+  margin-right: 1rem;
   font-size: 1.8rem;
   height: auto;
   align-items: center;

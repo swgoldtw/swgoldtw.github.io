@@ -15,7 +15,7 @@
   --blue-4: #798eb0;
   --blue-5: #4e6592;
   --blue-6: #303855;
-  --screen-corner-radius: 0.5vw;
+  --screen-corner-radius: 0.4rem;
 }
 
 @media only screen and (max-width: 1000px) {
