@@ -5,6 +5,7 @@
 
 :root {
   --main-width: 70vw;
+  --max-width: 1200px;
   --font-stack: "Anonymous Pro", "Red Hat Mono", "Inconsolata", "Lekton",
     "DejaVu Sans Mono", "Menlo", "Monaco", "Lucida Console", "Liberation Mono",
     "Bitstream Vera Sans Mono", "Courier New", sans-serif;
@@ -52,6 +53,7 @@
 #my-nav {
   display: flex;
   width: var(--main-width);
+  max-width: var(--max-width);
   justify-content: space-between;
   margin-top: 2vh;
 }
@@ -64,6 +66,7 @@
 
 #my-body section {
   width: var(--main-width);
+  max-width: var(--max-width);
 }
 
 .nav_left {
