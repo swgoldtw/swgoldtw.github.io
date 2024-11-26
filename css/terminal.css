@@ -84,7 +84,7 @@
   background-color: #fff;
 }
 
-@media only screen and (max-width: 600px) and (max-height: 900px) {
+@media only screen and (max-width: 600px) {
   #terminal .terminal-screen_image {
     max-height: 15px;
     max-width: 45px;
